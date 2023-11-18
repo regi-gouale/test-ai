@@ -1,0 +1,98 @@
+<header class="bg-white z-50 fixed top-0 w-full shadow-lg md:shadow-xl">
+  <nav
+    id="main-nav"
+    class="bg-white max-w-5xl mx-auto font-montserrat p-6 flex items-center justify-between"
+  >
+    <a href="/" class="flex" aria-label="Page d'accueil">
+      <img
+        src="../assets/_83dc6dad-7497-4411-8d04-e90f06c2445a.jpeg"
+        alt=""
+        class="hidden md:w-7 md:inline md:mr-4 md:rounded"
+      />
+      <span class="text-xl lg:text-2xl" aria-hidden="true"
+        >test<strong class="font-comfortaa text-indigo-700 font-extrabold"
+          >ai</strong
+        ></span
+      >
+    </a>
+    <button
+      aria-label="toggle button"
+      aria-expanded="false"
+      id="menu-btn"
+      class="cursor-pointer w-7 md:hidden"
+      (click)="toggleNav()"
+    >
+      <img src="./../assets/bars.svg" alt="" class="w-7 h-7" />
+    </button>
+    <ul
+      id="toggled-menu"
+      class="bg-indigo-100 w-1/2 absolute top-full right-0 -translate-y-full transition-transform -z-10 font-montserrat text-gray-800 border-b border-gray-200 flex flex-col items-center md:static md:z-10 md:w-full md:transform-none md:border-none md:flex-row md:justify-end"
+    >
+      <li class="py-4 md:py-0 md:mr-8">
+        <a
+          href="#"
+          class="text-sm uppercase font-semibold w-full hover:text-indigo-700 hover:font-bold"
+          >Accueil</a
+        >
+      </li>
+      <li class="py-4 md:py-0 md:mr-6">
+        <a
+          href="#"
+          class="text-sm uppercase font-semibold w-full hover:text-indigo-700 hover:font-bold"
+          >Inscription</a
+        >
+      </li>
+      <li class="py-4 md:py-0 md:mr-6">
+        <a
+          href="#"
+          class="text-sm uppercase font-semibold w-full hover:text-indigo-700 hover:font-bold"
+          >Connexion</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<div
+  class="relative top-32 p-4 flex flex-col max-w-7xl items-center justify-between mx-auto md:flex md:flex-row-reverse md:items-start md:justify-between md:top-52 md:py-8 md:space-y-0 font-montserrat"
+>
+  <div
+    id="response"
+    class="bg-white w-full mb-4 border rounded-xl shadow-md p-4 md:w-1/2"
+  >
+    <p class="max-h-96 h-96 overflow-auto">
+      Réponse de
+      <span class="" aria-hidden="true"
+        >test<strong class="font-comfortaa text-indigo-700 font-extrabold"
+          >ai</strong
+        ></span
+      >
+    </p>
+  </div>
+  <div
+    id="prompt"
+    class="w-full mb-4 py-4 md:w-1/2 md:mb-0 md:ml-0 md:mr-4 md:py-0 md:mt-0 lg:mr-8"
+  >
+    <textarea
+      name=""
+      id=""
+      rows="3"
+      placeholder="Insérer votre user story ici"
+      class="bg-white w-full border rounded-xl p-4 my-4 max-h-72 h-72 resize-none shadow-md overflow-auto md:mt-0"
+    ></textarea>
+    <div class="flex justify-evenly">
+      <button
+        type="button"
+        class="bg-indigo-100 border rounded-lg shadow-lg px-2 py-1 text-indigo-900 hover:bg-indigo-100 hover:font-semibold"
+      >
+        <span>Annuler</span>
+      </button>
+      <button
+        type="button"
+        class="bg-indigo-500 border rounded-lg shadow-lg px-2 py-1 text-white hover:font-semibold hover:bg-indigo-700"
+      >
+        <span>Soumettre</span>
+      </button>
+    </div>
+  </div>
+</div>
